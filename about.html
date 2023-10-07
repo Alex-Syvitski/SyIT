@@ -27,7 +27,20 @@
     </div>
 
     <script>
-        // Optional: Add JavaScript/jQuery for advanced slider functionalities
+        let slider = document.querySelector('.certification-slider');
+        let slides = document.querySelectorAll('.slide');
+        let slideWidth = slides[0].offsetWidth;
+        let slideIndex = 0;
+
+        function moveSlide() {
+            slideIndex++;
+            if (slideIndex > slides.length - 1) 
+            {
+                slideIndex = 0;
+            }
+            slider.scrollLeft = slideWidth * slideIndex;
+            }
+        setInterval(moveSlide, 3000); // 3000ms = 3 seconds per slide
     </script>
 
 </body>
