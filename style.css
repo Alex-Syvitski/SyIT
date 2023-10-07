@@ -6,6 +6,25 @@ body {
     align-items: center;
 }
 
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered-content {
+    text-align: center;
+}
+
+img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+
 container, header, #hero, footer {
     width: 90%; /* mobile by default */
     max-width: 1200px; /* or any desired max-width */
