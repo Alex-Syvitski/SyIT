@@ -28,6 +28,8 @@ body.visible {
     width: 90%; /* mobile by default */
     max-width: 1200px; /* or any desired max-width */
     padding: 40px 0; /* Vertical spacing */
+    margin: 0 auto;
+    text-align: center;
 }
 
 .centered-content img {
@@ -145,4 +147,29 @@ nav a {
 .certification-slider:hover .slide {
     transform: scale(1.05); /* slight zoom on hover for a nice effect */
 }
+.service-row {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
 
+.service-row img {
+    max-width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-offerings {
+    flex: 1;
+    padding: 20px;
+}
+
+.testimonials {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+blockquote {
+    font-style: italic;
+}
