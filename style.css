@@ -1,22 +1,17 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif; /* default font, you can change it later */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 body, html {
     height: 100%;
     margin: 0;
     font-family: 'Arial', sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .centered-content {
     text-align: center;
+    width: 90%; /* mobile by default */
+    max-width: 1200px; /* or any desired max-width */
 }
 
 img {
@@ -24,14 +19,6 @@ img {
     max-height: 250px;
 }
 
-
-container, header, #hero, footer {
-    width: 90%; /* mobile by default */
-    max-width: 1200px; /* or any desired max-width */
-    margin: 0 auto; /* centers the content */
-}
-
-/* Mobile-first styles for navigation */
 nav {
     display: flex;
     flex-direction: column;
@@ -54,6 +41,11 @@ nav a {
     nav a {
         margin: 0 15px;
     }
+
+    .button {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
 }
 
 .button {
@@ -69,13 +61,3 @@ nav a {
 .button:hover {
     background-color: #2980b9;
 }
-
-/* Larger screen adjustments for button */
-@media (min-width: 768px) {
-    .button {
-        padding: 12px 24px;
-        font-size: 18px;
-    }
-}
-
-
