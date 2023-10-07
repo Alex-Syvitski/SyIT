@@ -122,7 +122,16 @@ nav a {
     white-space: nowrap;
     width: 100%;
     margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
+
+.certification-slider::-webkit-scrollbar {
+    display: none;
+}
+
 
 .slide {
     min-width: 100%; /* so each slide takes full width of the container */
