@@ -8,15 +8,33 @@ body, html {
     justify-content: center;
 }
 
+/* Initial state: content is invisible */
+body {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* When page content is loaded, this class is added to make content visible */
+body.visible {
+    opacity: 1;
+}
+
+
 .centered-content {
     text-align: center;
     width: 90%; /* mobile by default */
     max-width: 1200px; /* or any desired max-width */
+    padding: 40px 0; /* Vertical spacing */
 }
 
 .centered-content img {
     max-width: 250px;
     max-height: 250px;
+}
+
+p {
+    line-height: 1.5; /* Improving legibility */
+    margin-bottom: 20px; /* Adding spacing after the paragraph */
 }
 
 h1 {
@@ -74,6 +92,7 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    transform: scale(1.05); /* Slight enlargement on hover */
 }
 
 .button:hover {
