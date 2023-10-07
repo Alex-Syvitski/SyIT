@@ -39,7 +39,7 @@ p {
 
 h1 {
     font-family: 'Roboto Slab', serif;
-    font-size: 2.5em; 
+    font-size: 2.9em; 
     color: darkgray;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -49,7 +49,7 @@ h1 {
 h1 .fancy-y {
     font-family: 'Pacifico', cursive;
     color: #5DADE2;  /* Baby Blue */
-    font-size: 2.7em; /* Making the 'y' slightly larger for emphasis */
+    font-size: 2.5em; /* Making the 'y' slightly larger for emphasis */
 }
 
 
