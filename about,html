@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sy IT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="centered-content">
+        <h1>About Al S and SyIT</h1>
+        <p>Your content here...</p>
+
+        <!-- Certification Slider -->
+        <div class="certification-slider">
+            <div class="slide" style="background-image: url('path/to/cert1.jpg');"></div>
+            <div class="slide" style="background-image: url('path/to/cert2.jpg');"></div>
+            <!-- ... add all 12 certifications here -->
+        </div>
+    </div>
+
+    <script>
+        // Optional: Add JavaScript/jQuery for advanced slider functionalities
+    </script>
+
+</body>
+
+</html>
