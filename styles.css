@@ -49,8 +49,9 @@ h1 {
 h1 .fancy-y {
     font-family: 'Pacifico', cursive;
     color: #5DADE2;  /* Baby Blue */
-    font-size: 2.5em; /* Making the 'y' slightly larger for emphasis */
+    font-size: 2.5rem; /* Now it's relative to the root font size, and not the parent h1 */
 }
+
 
 
 nav {
