@@ -38,11 +38,20 @@ p {
 }
 
 h1 {
-    font-size: 2.5em; /* Default size for larger screens */
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em; 
+    color: darkgray;
     line-height: 1.2;
     margin-bottom: 20px;
-    white-space: nowrap;
 }
+
+/* Styling the special 'y' character */
+h1 .fancy-y {
+    font-family: 'Pacifico', cursive;
+    color: #5DADE2;  /* Baby Blue */
+    font-size: 2.7em; /* Making the 'y' slightly larger for emphasis */
+}
+
 
 nav {
     display: flex;
