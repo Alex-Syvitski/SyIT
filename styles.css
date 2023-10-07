@@ -96,10 +96,11 @@ nav a {
     }
     
     .centered-content img {
-        max-width: 200px;
-        max-height: 200px;
+        width: 200px; /* Set a fixed width */
+        height: auto; /* Let height adjust automatically based on aspect ratio */
     }
 }
+
 
 .button {
     padding: 10px 20px;
