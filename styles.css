@@ -6,6 +6,7 @@ body, html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;  /* For positioning the image relative to the entire body */
 }
 
 /* Initial state: content is invisible */
@@ -19,79 +20,54 @@ body.visible {
     opacity: 1;
 }
 
-
 .centered-content {
     text-align: center;
     width: 90%; /* mobile by default */
     max-width: 1200px; /* or any desired max-width */
     padding: 40px 0; /* Vertical spacing */
+    z-index: 1;  /* Make sure the content always appears above the image */
+    position: relative;  /* Relevant for z-index */
 }
 
 .centered-content img {
+    position: absolute;  /* Positioning the image relative to the body */
+    top: 10px;
+    right: 10px;
     max-width: 250px;
     max-height: 250px;
 }
 
-p {
-    line-height: 1.5; /* Improving legibility */
-    margin-bottom: 20px; /* Adding spacing after the paragraph */
-}
+/* ... rest of the styles ... */
 
-h1 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 2.9em; 
-    color: darkgray;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
+/* Adjustments for 1080p and above */
+@media (min-width: 1920px) {
+    .centered-content {
+        max-width: 1600px;  /* Adjust if necessary */
+    }
 
-/* Styling the special 'y' character */
-h1 .fancy-y {
-    font-family: 'Pacifico', cursive;
-    color: #5DADE2;  /* Baby Blue */
-    font-size: 2.5rem; /* Now it's relative to the root font size, and not the parent h1 */
-}
+    .centered-content img {
+        max-width: 350px;
+        max-height: 350px;
+        top: 20px;  /* Adjust as needed */
+        right: 20px;  /* Adjust as needed */
+    }
 
-
-
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-nav a {
-    margin: 10px 0;
-    text-decoration: none;
-    color: inherit; 
-}
-
-/* Adjustments for tablets and smaller screens */
-@media (max-width: 768px) {
     h1 {
-        font-size: 2em; /* Reduce font size for tablets */
+        font-size: 3.5em;
     }
 
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    nav a {
-        margin: 0 15px;
-    }
-
-    .button {
-        padding: 12px 24px;
-        font-size: 18px;
-    }
+    /* Add any other adjustments you want for this screen size here */
 }
 
 /* Adjustments specifically for mobile devices */
 @media (max-width: 480px) {
+    .centered-content img {
+        position: static;  /* Reset the positioning for mobile to default */
+    }
+
     h1 {
-        font-size: 1.5em; /* Reduce font size even more for mobile */
-        margin-bottom: 15px; /* Compact margins */
+        font-size: 1.5em;
+        margin-bottom: 15px;
     }
 }
 
