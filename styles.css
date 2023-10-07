@@ -19,6 +19,9 @@ body.visible {
     opacity: 1;
 }
 
+.bold-link {
+    font-weight: bold;
+}
 
 .centered-content {
     text-align: center;
@@ -51,8 +54,6 @@ h1 .fancy-y {
     color: #5DADE2;  /* Baby Blue */
     font-size: 2.5rem; /* Now it's relative to the root font size, and not the parent h1 */
 }
-
-
 
 nav {
     display: flex;
