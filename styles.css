@@ -19,6 +19,11 @@ body, html {
     max-height: 250px;
 }
 
+h1 {
+    font-size: 2.5em; /* Default size for larger screens */
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
 
 nav {
     display: flex;
@@ -32,8 +37,12 @@ nav a {
     color: inherit; 
 }
 
-/* Tablet and larger screens */
-@media (min-width: 768px) {
+/* Adjustments for tablets and smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Reduce font size for tablets */
+    }
+
     nav {
         flex-direction: row;
         justify-content: space-between;
@@ -46,6 +55,14 @@ nav a {
     .button {
         padding: 12px 24px;
         font-size: 18px;
+    }
+}
+
+/* Adjustments specifically for mobile devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Reduce font size even more for mobile */
+        margin-bottom: 15px; /* Compact margins */
     }
 }
 
