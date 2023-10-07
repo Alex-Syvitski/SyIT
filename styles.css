@@ -94,6 +94,11 @@ nav a {
         font-size: 1.5em; /* Reduce font size even more for mobile */
         margin-bottom: 15px; /* Compact margins */
     }
+    
+    .centered-content img {
+        max-width: 200px;
+        max-height: 200px;
+    }
 }
 
 .button {
