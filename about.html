@@ -76,17 +76,22 @@
             }
         setInterval(moveSlide, 3000); // 3000ms = 3 seconds per slide
         
-        document.getElementById("showCertifications").addEventListener("click", function() {
-    var table = document.getElementById("certificationsTable");
-    if (table.style.display === "none") {
-        table.style.display = "table";
-    } else {
+       document.getElementById("showCertifications").addEventListener("click", function() {
+        var table = document.getElementById("certificationsTable");
+    
+        if (table.style.display === "none") {
+            table.style.display = "table";
+        
+            // Scroll to the table
+            window.scrollTo({
+                top: table.offsetTop,
+                behavior: 'smooth'  // smooth scrolling
+            });
+        } else {
         table.style.display = "none";
-    }
-});
+        }
+        });
 
     </script>
-
 </body>
-
 </html>
