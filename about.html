@@ -26,12 +26,39 @@
             <div class="slide" style="background-image: url('images/awsfund.png');"></div>
             <div class="slide" style="background-image: url('images/awssaa.png');"></div>
             <div class="slide" style="background-image: url('images/msbi900.png');"></div>
-            <div class="slide" style="background-image: url('images/mssc900');"></div>
+            <div class="slide" style="background-image: url('images/mssc900.png');"></div>
             <div class="slide" style="background-image: url('images/msaz500.png');"></div>
             <div class="slide" style="background-image: url('images/msaz104.png');"></div>
             <div class="slide" style="background-image: url('images/msazdata.png');"></div>
         </div>
     </div>
+
+    <!-- Certifications List Button -->
+<button id="showCertifications">View All Certifications</button>
+
+<!-- Certifications Table -->
+<table id="certificationsTable" style="display: none;">
+    <thead>
+        <tr>
+            <th>Certifications</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Microsoft Certified: Azure Fundamentals</td></tr>
+        <tr><td>Microsoft Certified: Azure Data Fundamentals</td></tr>
+        <tr><td>Microsoft Certified: Azure AI Fundamentals</td></tr>
+        <tr><td>Microsoft Certified: Security, Compliance, and Identity Fundamentals</td></tr>
+        <tr><td>Microsoft Certified: Power Platform Fundamentals</td></tr>
+        <tr><td>Microsoft Certified: Azure Administrator Associate</td></tr>
+        <tr><td>Microsoft Certified: Azure Security Associate</td></tr>
+        <tr><td>Microsoft Certified: Azure Solutions Expert</td></tr>
+        <tr><td>AWS Certified: Cloud Practitioner</td></tr>
+        <tr><td>AWS Certified: Solutions Architect Associate</td></tr>
+        <tr><td>ISC2: Certified in Cybersecurity (CC)</td></tr>
+        <tr><td>CSA: Certificate of Cloud Security Knowledge v.4 (CCSK)</td></tr>
+    </tbody>
+</table>
+
 
     <script>
         let slider = document.querySelector('.certification-slider');
@@ -48,6 +75,16 @@
             slider.scrollLeft = slideWidth * slideIndex;
             }
         setInterval(moveSlide, 3000); // 3000ms = 3 seconds per slide
+        
+        document.getElementById("showCertifications").addEventListener("click", function() {
+    var table = document.getElementById("certificationsTable");
+    if (table.style.display === "none") {
+        table.style.display = "table";
+    } else {
+        table.style.display = "none";
+    }
+});
+
     </script>
 
 </body>
