@@ -230,7 +230,7 @@ blockquote {
 .designation {
     font-size: 0.6em;
     position: relative;
-    top: -7px;  /* Adjusts the vertical position. Play with this value to achieve the desired look */
+    top: -1px;  /* Adjusts the vertical position. Play with this value to achieve the desired look */
 }
 
 
