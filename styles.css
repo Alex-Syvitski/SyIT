@@ -227,3 +227,9 @@ blockquote {
     margin-top: 20px; /* Adjust this value as needed to space between the quote and author */
 }
 
+.designation {
+    font-size: 0.8em; /* You can adjust this value as needed */
+    vertical-align: super; /* This slightly raises the designations to look better with the smaller font size */
+}
+
+
