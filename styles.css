@@ -25,6 +25,13 @@ p {
     margin-bottom: 20px;
     word-break: break-word;
 }
+.child-element {
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: auto;
+}
 
 /* Media */
 *,
@@ -35,8 +42,8 @@ p {
 
 @media (max-width: 480px) {
     body {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 35px;
+        padding-right: 35px;
     }
 
     .button {
@@ -44,14 +51,14 @@ p {
     }
     
     h1 {
-        font-size: 1.8em;
+        font-size: 1.7em;
     }
 }
 
 @media (max-width: 720px) {
     body {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 
