@@ -7,7 +7,12 @@ body, html {
     align-items: center;
     justify-content: flex-start; 
 }
-
+.header-logo {
+    max-width: 150px; /* or the desired width */
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+}
 /* Initial state: content is invisible */
 body {
     opacity: 1;
