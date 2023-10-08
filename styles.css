@@ -24,6 +24,16 @@ p {
     margin-bottom: 20px;
 }
 
+/* Media */
+
+@media (max-width: 480px) {
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
 /* Headers */
 h1 {
     font-family: 'Roboto Slab', serif;
