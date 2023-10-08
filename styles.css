@@ -228,9 +228,9 @@ blockquote {
 }
 
 .designation {
-    font-size: 0.8em;
+    font-size: 0.6em;
     position: relative;
-    top: -5px;  /* Adjusts the vertical position. Play with this value to achieve the desired look */
+    top: -7px;  /* Adjusts the vertical position. Play with this value to achieve the desired look */
 }
 
 
