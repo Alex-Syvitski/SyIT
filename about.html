@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Pacifico&display=swap" rel="stylesheet">
     <meta name="robots" content="index, follow">
+
+    <style>
+        @media (max-width: 480px) {
+            .restricted-image {
+                width: 100%;
+            }
+            .button {
+                margin: 5px 0; /* Adds a top and bottom margin */
+            }
+            h1 {
+                font-size: 2em; /* Reduces the font size of h1 */
+            }
+            table {
+                overflow-x: auto; /* Makes the table scrollable horizontally */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -109,19 +126,18 @@
         setInterval(moveSlide, 3000); // 3000ms = 3 seconds per slide
         
        document.getElementById("showCertifications").addEventListener("click", function() {
-        var table = document.getElementById("certificationsTable");
-    
-        if (table.style.display === "none") {
-            table.style.display = "table";
-        
-            // Scroll to the table
-            window.scrollTo({
-                top: table.offsetTop,
-                behavior: 'smooth'  // smooth scrolling
-            });
-        } else {
+    var table = document.getElementById("certificationsTable");
+
+    if (table.style.display === "none" || table.style.display === "") {
+        table.style.display = "table";
+        // Scroll to the table
+        window.scrollTo({
+            top: table.offsetTop,
+            behavior: 'smooth'  // smooth scrolling
+        });
+    } else {
         table.style.display = "none";
-        }
+            }
         });
 
     </script>
