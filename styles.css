@@ -111,7 +111,7 @@ nav a {
 }
 
 .centered-content img {
-    max-width: 100%;  /* Ensure images are responsive */
+    max-width: 250px;  /* Ensure images are responsive */
     height: auto;
 }
 
@@ -173,7 +173,7 @@ nav a {
 }
 
 .restricted-image {
-    max-width: 100%; /* Ensure images are responsive */
+    max-width: 150px; /* Ensure images are responsive */
     height: auto;
 }
 
