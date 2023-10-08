@@ -13,6 +13,7 @@ body, html {
     justify-content: flex-start;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
 }
 
 body.visible {
@@ -25,11 +26,18 @@ p {
 }
 
 /* Media */
-
 @media (max-width: 480px) {
     body {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    
+    .button {
+        margin: 5px 0;
+    }
+    
+    h1 {
+        font-size: 2em;
     }
 }
 
@@ -39,7 +47,6 @@ p {
         padding-right: 15px;
     }
 }
-
 
 /* Headers */
 h1 {
@@ -72,6 +79,8 @@ nav a {
 .header-nav {
     display: flex;
     gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Elements & Components */
@@ -102,8 +111,8 @@ nav a {
 }
 
 .centered-content img {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 100%;  /* Ensure images are responsive */
+    height: auto;
 }
 
 .button {
@@ -164,7 +173,7 @@ nav a {
 }
 
 .restricted-image {
-    max-width: 150px;
+    max-width: 100%; /* Ensure images are responsive */
     height: auto;
 }
 
@@ -184,27 +193,24 @@ blockquote {
 }
 
 .fancy-quote {
-    font-family: 'Playfair Display', serif; /* This will be the fancy font for the quote */
+    font-family: 'Playfair Display', serif;
     font-size: 1.5em;
-    color: #3498db; /* You can change this color */
+    color: #3498db;
     text-align: center;
-    margin-top: 50px; /* Adjust this value as needed to position the quote */
+    margin-top: 50px;
 }
 
 .quote-author {
-    font-family: 'Roboto', sans-serif; /* This will be the font for the author */
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
-    color: #2c3e50; /* You can change this color */
+    color: #2c3e50;
     display: block;
     text-align: center;
-    margin-top: 20px; /* Adjust this value as needed to space between the quote and author */
+    margin-top: 20px;
 }
 
 .designation {
     font-size: 0.6em;
     position: relative;
-    top: -1px;  /* Adjusts the vertical position. Play with this value to achieve the desired look */
+    top: -1px;
 }
-
-
-
