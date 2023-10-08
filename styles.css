@@ -7,12 +7,14 @@ body, html {
     align-items: center;
     justify-content: flex-start; 
 }
+
 .header-logo {
-    max-width: 150px; /* or the desired width */
+    max-width: 150px; 
     height: auto; 
     display: block; 
     margin: 0 auto;
 }
+
 .service-header {
     display: flex;
     align-items: center;
@@ -20,18 +22,16 @@ body, html {
     padding: 20px;
 }
 
-/* Initial state: content is invisible */
 body {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
 }
+
 .header-nav {
     display: flex;
     gap: 20px;
 }
 
-
-/* When page content is loaded, this class is added to make content visible */
 body.visible {
     opacity: 1;
 }
@@ -42,11 +42,10 @@ body.visible {
 
 .centered-content {
     text-align: center;
-    width: 90%; /* mobile by default */
-    max-width: 1200px; /* or any desired max-width */
-    padding: 40px 0; /* Vertical spacing */
+    width: 90%;
+    max-width: 1200px;
+    padding: 40px 0;
     margin: 0 auto;
-    text-align: center;
 }
 
 .centered-content img {
@@ -55,8 +54,8 @@ body.visible {
 }
 
 p {
-    line-height: 1.5; /* Improving legibility */
-    margin-bottom: 20px; /* Adding spacing after the paragraph */
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -67,38 +66,28 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Styling the special 'y' character */
 h1 .fancy-y {
     font-family: 'Pacifico', cursive;
-    color: #5DADE2;  /* Baby Blue */
-    font-size: 2.5rem; /* Now it's relative to the root font size, and not the parent h1 */
+    color: #5DADE2;
+    font-size: 2.5rem;
 }
 
+/* Updated nav styles */
 nav {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 nav a {
-    margin: 10px 0;
+    margin: 0 15px;
     text-decoration: none;
     color: inherit; 
 }
 
-/* Adjustments for tablets and smaller screens */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2em; /* Reduce font size for tablets */
-    }
-
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    nav a {
-        margin: 0 15px;
+        font-size: 2em;
     }
 
     .button {
@@ -107,16 +96,15 @@ nav a {
     }
 }
 
-/* Adjustments specifically for mobile devices */
 @media (max-width: 480px) {
     h1 {
-        font-size: 1.5em; /* Reduce font size even more for mobile */
-        margin-bottom: 15px; /* Compact margins */
+        font-size: 1.5em;
+        margin-bottom: 15px;
     }
     
     .centered-content img {
-        width: 200px; /* Set a fixed width */
-        height: auto; /* Let height adjust automatically based on aspect ratio */
+        width: 200px;
+        height: auto;
     }
 }
 
@@ -128,7 +116,7 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    transform: scale(1.05); /* Slight enlargement on hover */
+    transform: scale(1.05);
 }
 
 .button:hover {
@@ -143,18 +131,17 @@ nav a {
     margin: 40px 0;
     position: relative;
     overflow: hidden;
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .certification-slider::-webkit-scrollbar {
     display: none;
 }
 
-
 .slide {
-    min-width: 100%; /* so each slide takes full width of the container */
-    height: 250px; /* adjust based on your preference */
+    min-width: 100%;
+    height: 250px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -162,8 +149,9 @@ nav a {
 }
 
 .certification-slider:hover .slide {
-    transform: scale(1.05); /* slight zoom on hover for a nice effect */
+    transform: scale(1.05);
 }
+
 .service-row {
     display: flex;
     align-items: center;
