@@ -28,8 +28,8 @@ p {
 
 @media (max-width: 480px) {
     body {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 20px;
+        padding-right: 5px;
     }
 }
 
