@@ -206,3 +206,24 @@ nav a {
 blockquote {
     font-style: italic;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); /* Fancy Font for the Quote */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Font for the Author */
+
+.fancy-quote {
+    font-family: 'Playfair Display', serif; /* This will be the fancy font for the quote */
+    font-size: 1.5em;
+    color: #3498db; /* You can change this color */
+    text-align: center;
+    margin-top: 50px; /* Adjust this value as needed to position the quote */
+}
+
+.quote-author {
+    font-family: 'Roboto', sans-serif; /* This will be the font for the author */
+    font-size: 1.2em;
+    color: #2c3e50; /* You can change this color */
+    display: block;
+    text-align: center;
+    margin-top: 20px; /* Adjust this value as needed to space between the quote and author */
+}
+
