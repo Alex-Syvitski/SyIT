@@ -4,6 +4,7 @@
 
 /* Base Styles */
 body, html {
+	background-color: lightcoral; /* Debug color */
     height: 100%;
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -21,6 +22,7 @@ body.visible {
 }
 
 p {
+	background-color: lightseagreen; /* Debug color */
     line-height: 1.5;
     margin-bottom: 20px;
 }
@@ -64,6 +66,7 @@ p {
 
 /* Headers */
 h1 {
+	background-color: lightsalmon; /* Debug color */
     font-family: 'Roboto Slab', serif;
     font-size: 2.9em;
     color: darkgray;
@@ -79,6 +82,7 @@ h1 .fancy-y {
 
 /* Navigation */
 nav {
+	background-color: lightgoldenrodyellow;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -91,6 +95,7 @@ nav a {
 }
 
 .header-nav {
+	background-color: lightpink;
     display: flex;
     gap: 20px;
     margin: 0;
@@ -99,6 +104,7 @@ nav a {
 
 /* Elements & Components */
 .header-logo {
+	background-color: lightblue;
     max-width: 150px;
     height: auto;
     display: block;
@@ -106,6 +112,7 @@ nav a {
 }
 
 .service-header {
+	background-color: lightgreen;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -117,6 +124,7 @@ nav a {
 }
 
 .centered-content {
+	background-color: lightyellow;
     text-align: center;
     width: 90%;
     max-width: 1200px;
@@ -130,6 +138,7 @@ nav a {
 }
 
 .button {
+	background-color: lavender;
     padding: 10px 20px;
     border: none;
     background-color: #3498db;
@@ -160,6 +169,7 @@ nav a {
 }
 
 .certification-slider {
+	background-color: khaki;
     display: flex;
     overflow: auto;
     white-space: nowrap;
@@ -172,6 +182,7 @@ nav a {
 }
 
 .slide {
+	background-color: lightcyan;
     min-width: 100%;
     height: 250px;
     background-size: contain;
@@ -181,12 +192,14 @@ nav a {
 }
 
 .service-row {
+	background-color: lightgray;
     display: flex;
     align-items: center;
     margin: 20px 0;
 }
 
 .restricted-image {
+	background-color: lightslategray;
     max-width: 150px; /* Ensure images are responsive */
     height: auto;
 }
@@ -197,12 +210,14 @@ nav a {
 }
 
 .testimonials {
+	background-color: linen;
     background-color: #f8f8f8;
     padding: 20px;
     border-radius: 10px;
 }
 
 blockquote {
+	background-color: lavenderblush;
     font-style: italic;
 }
 
@@ -215,6 +230,7 @@ blockquote {
 }
 
 .quote-author {
+	background-color: lemonchiffon;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
     color: #2c3e50;
