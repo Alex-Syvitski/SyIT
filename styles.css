@@ -228,9 +228,10 @@ blockquote {
 }
 
 .designation {
-    font-size: 0.8em;  /* You can adjust this value as needed */
-    vertical-align: super;  /* This slightly raises the designations */
-    margin-bottom: -5px;  /* Adjusts the placement, remove the extra space at the bottom. Adjust the value if necessary */
+    font-size: 0.8em;
+    position: relative;
+    top: -5px;  /* Adjusts the vertical position. Play with this value to achieve the desired look */
 }
+
 
 
