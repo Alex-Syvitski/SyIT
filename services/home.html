@@ -5,57 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <title>Home IT Solutions - Sy IT</title>
-    <meta name="description" content="SyIT offers tailored IT solutions for homes, making technology accessible and hassle-free for moms and dads of every tech skill level.">
-    <link rel="canonical" href="https://alex-syvitski.github.io/SyIT/services/home.html">
+    <title>Services - Sy IT</title>
+    <meta name="description" content="Explore the range of IT services offered by SyIT. From cybersecurity to network optimization, we have the solutions to ensure your digital space remains secure and efficient.">
+    <link rel="canonical" href="https://alex-syvitski.github.io/SyIT/service.html">
     <link rel="stylesheet" href="../styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="icon" href="../images/logo.png" type="image/png">
-    <style>
-        .service-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-        .service-item {
-            flex: 1;
-            max-width: 45%;
-            text-align: center;
-        }
-        .service-image {
-            max-width: 100%;
-            height: auto;
-        }
-        @media (max-width: 768px) {
-            .service-item {
-                max-width: 100%;
-            }
-        }
-    </style>
 </head>
-
 <body>
-    <h1>Welcome to Sy IT Home Solutions</h1>
-    <p>Making technology friendly and accessible for every home.</p>
-    
-    <div class="service-container">
-        <!-- Example Home Service 1 -->
-        <div class="service-item">
-            <img src="../images/home-service1.jpg" alt="Service 1 Image Description" class="service-image">
-            <h2>Family Cybersecurity</h2>
-            <p>Protect your family online with our easy-to-understand cybersecurity solutions.</p>
+    <header class="service-header">
+        <a href="../index.html"> <!-- Adjusted the path -->
+            <img src="../images/syit-logo.jpg" alt="SyIT company logo in blue and white" class="header-logo" title="SyIT Logo">
+        </a>
+        <nav class="header-nav">
+            <a href="../index.html" class="button">Home</a>
+            <a href="index.html" class="button">Services</a> <!-- This links to the services/index.html -->
+            <a href="../about.html" class="button">About Us</a>
+            <a href="mailto:alexsyvitski@hotmail.com" class="button">Get Started</a>
+        </nav>
+    </header>
+    <!-- Service Header: End -->
+
+    <div class="centered-content">
+        <h1>S<span class="fancy-y">y</span>IT Expertise, Your Success</h1>
+        <p>Originating from the heart of Edmonton, Alberta, SyIT boasts a remarkable journey of over 17 years dedicated to mastering infrastructure technologies. Throughout this time, we've not only accumulated hands-on experience but have also pursued and achieved a myriad of industry-leading certifications. While we are proud of our local roots, the digital age enables us to serve clients even remotely, ensuring that businesses, no matter where they're located, have access to our expertise. With this extensive background, we confidently offer a comprehensive suite of services, each meticulously tailored to ensure the success and growth of your business in today's competitive landscape.</p>
+
+        <!-- Services Row 1 -->
+        <div class="service-row">
+            <img src="../images/cloudlock.jpg" alt="Cloud shaped lock with keyhole" class="service-image" title="Cloud Lock">
+
+            <div class="service-offerings">
+                <h2>PC Optimization & Maintenance:</h2>
+                <p>Ensure your personal computer is running at its peak with routine maintenance, software updates, and optimization.</p>
+
+                <h2>Home Network Security Assessment:</h2>
+                <p>Get your home Wi-Fi and connected devices checked for vulnerabilities, and recommendations for enhancing security.</p>
+            </div>
         </div>
 
-        <!-- Example Home Service 2 -->
-        <div class="service-item">
-            <img src="../images/home-service2.jpg" alt="Service 2 Image Description" class="service-image">
-            <h2>Easy Tech Training</h2>
-            <p>Empower yourself with basic tech know-how. Workshops designed for moms and dads.</p>
+        <!-- Services Row 2 -->
+        <div class="service-row reverse">
+            <div class="service-offerings">
+                <h2>Custom Home Workstation Setup:</h2>
+                <p>Ideal for remote work or learning. Tailored IT solutions based on your needs, ensuring a smooth, productive environment.</p>
+
+                <h2>Personal Data Management: </h2>
+                <p>Learn about best practices for storing, backing up, and encrypting your personal data, photos, and other digital assets.</p>
+            </div>
+
+            <img src="../images/cloudlock2.jpg" alt="Cloud shaped lock at sunset" class="service-image" title="Cloud Lock">
         </div>
 
-        <!-- ... Add more services as needed ... -->
+        <!-- Additional visual flair: Testimonials -->
+        <div class="testimonials">
+            <h2>What Our Clients Say</h2>
+			<blockquote>"With Alex's guidance, I finally feel like I'm in control of my online security. Their team made it so easy to understand and implement changes that have made a real difference."</blockquote>
+			<cite>- A Grateful Home User</cite>
+
+        </div>
+
+        <!-- Services Row 3 -->
+        <div class="service-row">
+            <img src="../images/shield.jpg" alt="Digital Shield representing cybersecurity" class="service-image" title="Digital Shield">
+
+            <div class="service-offerings">
+                <h2>Cybersecurity Training for Families: </h2>
+                <p>Equip your family with the knowledge to spot phishing emails, avoid online scams, and practice safe browsing.</p>
+
+                <h2>Home Automation & IoT Security: </h2>
+                <p>As homes become smarter, ensure your IoT devices like thermostats, cameras, and smart speakers are set up securely.</p>
+            </div>
+        </div>
+
+        <!-- Services Row 4 -->
+        <div class="service-row reverse">
+            <div class="service-offerings">
+                <h2>Software & Hardware Recommendations:</h2>
+                <p>Guidance on the best software and hardware solutions tailored to your home needs and interests.</p>
+
+                <h2>Tech Support & Troubleshooting: </h2>
+                <p>On-demand support for when your devices act up. From software glitches to hardware issues, get expert advice and fixes.</p>
+            </div>
+
+            <img src="../images/cyb-mis.jpg" alt="Person at start of a maze within the digital matrix of cybersecurity" class="service-image" title="Digital Matrix Maze">
+        </div>
+
+        <!-- Services Row 5 -->
+        <div class="service-row">
+            <img src="../images/cyb-fort.jpg" alt="Digital Fortress representing cybersecurity" class="service-image" title="Digital Fortress">
+
+            <div class="service-offerings">
+                <h2>Personal Cloud Solutions:</h2>
+                <p>Safely store and access your documents, photos, and videos from anywhere using trusted cloud solutions.</p>
+
+                <h2>Digital Parenting Workshops: </h2>
+                <p>Learn how to set parental controls, monitor online activities, and ensure a safe digital environment for children.</p>
+            </div>
+        </div>
+
+        <!-- Additional visual flair: Testimonials -->
+        <div class="testimonials">
+            <h2>What Our Clients Say</h2>
+			<blockquote>"My home office setup was a mess before I found SyIT/Alex. He streamlined everything, making me more productive and ensuring that my client data stays secure. Can't thank them enough!"</blockquote>
+			<cite>- Freelancer in Alberta</cite>
+        </div>
     </div>
 </body>
-
 </html>
