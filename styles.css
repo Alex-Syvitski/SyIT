@@ -15,7 +15,9 @@ body, html {
     transition: opacity 0.3s ease-in-out;
     overflow-x: hidden;  /* Prevent horizontal scrolling */
 }
-
+body {
+    background: linear-gradient(to right, #FFFFFF, #F5F5F5);
+}
 body.visible {
     opacity: 1;
 }
