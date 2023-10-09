@@ -33,7 +33,7 @@
 <body>
     <header class="service-header">
         <a href="index.html">
-            <img src="images/syit-logo.jpg" alt="SyIT logo" class="header-logo">
+            <img src="images/syit-logo.jpg" alt="S intertwined with blue Y with SYIT underneath" class="header-logo" title="SyIT logo">
         </a>
         <!-- Navigation for other pages (feel free to expand) -->
         <nav class="header-nav">
@@ -45,7 +45,7 @@
     </header>
     <div class="centered-content">
         <h1>About Alex S<span class="fancy-y">y</span>vitski, <span class="designation">CCSK, MCSE, CC</span></h1>
-        <img src="images/ALEX.JPG" alt="CyberCloud Alex Syvitski" class="restricted-image">
+        <img src="images/ALEX.JPG" alt="CyberCloud Alex Syvitski" class="restricted-image" title="Alex Syvitski" loading="lazy">
         <p>
         Alex Syvitski is a dedicated professional with an extensive background in Infrastructure, Cloud Architecture, and Cybersecurity. With a career spanning 17 years, including a notable decade in enterprise environments, Alex offers top-tier, tailored cybersecurity solutions that cater to unique business needs.
         </p>  
@@ -58,18 +58,43 @@
         </ul>
         <!-- Certification Slider -->
         <div class="certification-slider">
-            <div class="slide" style="background-image: url('images/isc2CC.png');"></div>
-            <div class="slide" style="background-image: url('images/msaz900.png');"></div>
-            <div class="slide" style="background-image: url('images/msaz305.png');"></div>
-            <div class="slide" style="background-image: url('images/msaz900.png');"></div>
-            <div class="slide" style="background-image: url('images/ccsk.png');"></div>
-            <div class="slide" style="background-image: url('images/awsfund.png');"></div>
-            <div class="slide" style="background-image: url('images/awssaa.png');"></div>
-            <div class="slide" style="background-image: url('images/msbi900.png');"></div>
-            <div class="slide" style="background-image: url('images/mssc900.png');"></div>
-            <div class="slide" style="background-image: url('images/msaz500.png');"></div>
-            <div class="slide" style="background-image: url('images/msaz104.png');"></div>
-            <div class="slide" style="background-image: url('images/msazdata.png');"></div>
+            <div class="slide">
+    <img src="images/isc2CC.png" alt="ISC2 Certified in Cybersecurity badge" loading="lazy">
+</div>
+<div class="slide">
+    <img src="images/msaz900.png" alt="Microsoft Azure Fundamentals badge" loading="lazy">
+</div>
+<div class="slide">
+    <img src="images/msaz305.png" alt="Microsoft Azure Solutions badge" loading="lazy">
+</div>
+<div class="slide">
+    <img src="images/msaz900.png" alt="Microsoft Azure Fundamentals badge" loading="lazy">
+</div>
+<div class="slide">
+    <img src="images/ccsk.png" alt="CSA Certificate of Cloud Security Knowledge badge" loading="lazy">
+</div>
+<div class="slide">
+    <img src="images/awsfund.png" alt="AWS Cloud Practitioner badge" loading="lazy">
+</div>
+<div class="slide">
+    <img src="images/awssaa.png" alt="AWS Solutions Architect Associate badge" loading="lazy">
+</div>
+<div class="slide">
+    <img src="images/msbi900.png" alt="Microsoft Power BI Fundamentals badge" loading="lazy">
+</div>
+<div class="slide">
+    <img src="images/mssc900.png" alt="Microsoft Security, Compliance, and Identity Fundamentals badge" loading="lazy">
+</div>
+<div class="slide">
+    <img src="images/msaz500.png" alt="Microsoft Azure Security Associate badge" loading="lazy">
+</div>
+<div class="slide">
+    <img src="images/msaz104.png" alt="Microsoft Azure Administrator Associate badge" loading="lazy">
+</div>
+<div class="slide">
+    <img src="images/msazdata.png" alt="Microsoft Azure Data Fundamentals badge" loading="lazy">
+</div>
+
         </div>
     </div>
 
@@ -109,7 +134,20 @@
     </tbody>
 </table>
 
-
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Alex Syvitski",
+  "jobTitle": "CCSK, MCSE, CC",
+  "image": "images/ALEX.JPG",
+  "description": "Alex Syvitski is a dedicated professional with an extensive background in Infrastructure, Cloud Architecture, and Cybersecurity. ... (continue with more details)",
+  "telephone": "(your phone number if available)",
+  "email": "alexsyvitski@hotmail.com",
+  "url": "https://alex-syvitski.github.io/SyIT/about.html",
+  "alumniOf": "(Any school or institution if you want to add)"
+}
+</script>
     <script>
         let slider = document.querySelector('.certification-slider');
         let slides = document.querySelectorAll('.slide');
