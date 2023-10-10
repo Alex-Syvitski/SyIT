@@ -154,22 +154,22 @@
 }
 </script>
     <script>
-        let slider = document.querySelector('.certification-slider');
-        let slides = document.querySelectorAll('.slide');
-        let slideWidth = slides[0].offsetWidth;
-        let slideIndex = 0;
+    let slider = document.querySelector('.certification-slider');
+    let slides = document.querySelectorAll('.slide');
+    let slideWidth = slides[0].offsetWidth;
+    let slideIndex = 0;
 
-        function moveSlide() {
-            slideIndex++;
-            if (slideIndex > slides.length - 1) 
-            {
-                slideIndex = 0;
-            }
-            slider.scrollLeft = slideWidth * slideIndex;
-            }
-        setInterval(moveSlide, 3000); // 3000ms = 3 seconds per slide
-        
-       document.getElementById("showCertifications").addEventListener("click", function() {
+    function moveSlide() {
+    slideIndex++;
+    if (slideIndex > slides.length - 1) 
+    {
+        slideIndex = 0;
+    }
+    slider.scrollLeft = slideWidth * slideIndex;
+    }
+    setInterval(moveSlide, 3000); // 3000ms = 3 seconds per slide
+
+    document.getElementById("showCertifications").addEventListener("click", function() {
     var table = document.getElementById("certificationsTable");
 
     if (table.style.display === "none" || table.style.display === "") {
@@ -181,8 +181,23 @@
         });
     } else {
         table.style.display = "none";
-            }
+    }
+    });
+
+    document.getElementById("showCredentials").addEventListener("click", function() {
+    var credentialsDiv = document.getElementById("credentials");
+
+    if (credentialsDiv.style.display === "none" || credentialsDiv.style.display === "") {
+        credentialsDiv.style.display = "block";
+        // Scroll to the credentials
+        window.scrollTo({
+            top: credentialsDiv.offsetTop,
+            behavior: 'smooth'  // smooth scrolling
         });
+    } else {
+        credentialsDiv.style.display = "none";
+    }
+});
 
     </script>
 </body>
