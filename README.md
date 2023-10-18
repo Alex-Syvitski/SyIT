@@ -1,5 +1,5 @@
 # SyvIT
-Want to have a security business for any freelance work. Making a website associated with and using it to also refresh my own knowledge.
+Want to have a security website for any freelance work. Making a website associated with and using it to also refresh my own knowledge.
 
 10/09/2023 -- rebranding even though its not registered business or anything, syit is clearly taken. I will leave the domain url as syit, to avoid broken links.
 Assuming i would have to rebrand regardless so I am going to annotate all branding spots so anyone can copypasta this for there own purposes.
